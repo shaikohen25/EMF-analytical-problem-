@@ -1,0 +1,32 @@
+# Electromagnetic Fields (EMF) Project 
+
+This project simulates and analyzes charge distributions and capacitance properties of a disc-shaped conductor placed in an electric field, using numerical methods.
+
+
+## Features
+- Numerical solution for charge distribution over a disc-shaped conductor.
+- Capacitance calculations for varying distances between parallel plates.
+- Graphical comparison between numerical and theoretical capacitance values.
+
+## Key Functions
+1. **`is_in_circle(R, d, i, j)`**: Determines whether a grid point lies inside the disc.
+2. **`generate_coordinates(R, d)`**: Generates coordinates of points within the disc.
+3. **`build_interaction_matrix(points, D=0)`**: Constructs the interaction matrix for potential equations.
+4. **`solve_charge_distribution(V, R, d, D=0)`**: Solves the charge distribution system.
+5. **`calculate_total_charge(charge_distribution)`**: Computes the total charge.
+6. **`plot_capacitance_vs_distance()`**: Plots capacitance vs distance and compares with theoretical results.
+
+## Results
+- Capacitance values for distances `D = R/2` and `D = R/5`.
+- Visualization of the capacitance as a function of distance.
+
+## Example Output
+```
+Capacitance for D = R/2: 1.2345e-10 F
+Capacitance for D = R/5: 2.3456e-10 F
+```
+
+## Graph
+- The plot illustrates both numerical and theoretical capacitance vs. distance.
+
+
